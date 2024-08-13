@@ -24,6 +24,7 @@
     "react": "^18",
     "react-dom": "^18",
     "recoil": "^0.7.7",
+    "sharp": "^0.33.4",
     "supabase": "^1.187.10",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"

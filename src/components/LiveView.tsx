@@ -109,7 +109,9 @@ export function LiveView({ url }: { url: string }) {
     const getProducts = async () => {
       const { data } = await supabase.from("products").select().eq('run_id', runID);
       setIsLoading(false)
-      setProducts(data)
+      if (data) {
+        setProducts(data);
+      }
     }
 
     getProducts()
@@ -171,45 +173,5 @@ export function LiveView({ url }: { url: string }) {
         </div>
       </div>
     </div>
-  )
-}
-
-function PlayIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polygon points="6 3 20 12 6 21 6 3" />
-    </svg>
-  )
-}
-
-
-function XIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
   )
 }

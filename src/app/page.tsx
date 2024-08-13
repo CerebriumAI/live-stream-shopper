@@ -1,9 +1,9 @@
 'use client'
 
 import { LiveView } from "@/components/LiveView";
-import Splash from "./Splash.tsx";
+import Splash from "./Splash";
 import { useState } from "react";
-import Header from "../components/ui/header.tsx";
+import Header from "../components/ui/header";
 
 const showSplashPage = process.env.NEXT_PUBLIC_SHOW_SPLASH;
 

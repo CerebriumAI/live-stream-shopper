@@ -9,7 +9,7 @@ import SupabaseLogo from "@/app/assets/logos/supabase.png"
 import { Button } from "@/components/ui/button";
 
 type SplashProps = {
-  handleReady: (url: str) => void;
+  handleReady: (url: string) => void;
 };
 
 const Splash: React.FC<SplashProps> = ({ handleReady }) => {
@@ -102,7 +102,7 @@ const Splash: React.FC<SplashProps> = ({ handleReady }) => {
         <div className="h-[1px] bg-primary-300 w-full" />
 
         <footer className="flex flex-col lg:flex-row lg:gap-2">
-          <Button variant="light" asChild>
+          <Button asChild>
             <a
               href="https://github.com/CerebriumAI/examples/tree/master/19-voice-rag-agent"
               className="text-indigo-600"
@@ -111,7 +111,7 @@ const Splash: React.FC<SplashProps> = ({ handleReady }) => {
               View source code
             </a>
           </Button>
-          <Button variant="light" asChild>
+          <Button asChild>
             <a
               href="https://www.cerebrium.ai/blog/creating-a-realtime-rag-voice-agent"
               className="text-indigo-600"
