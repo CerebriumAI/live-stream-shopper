@@ -146,7 +146,7 @@ export function LiveView({ url }: { url: string }) {
           {error ? (
             <p className="text-red-500">{error}</p>
           ) : products.length === 0 ? (
-            <p className="text-gray-500">Products will appear as they are picked up...</p>
+            <p className="text-gray-500">Wait for the bot to join the meeting. Then products will appear as they are picked up...</p>
           ) : (
             products.map(product => (
               <Card key={product.id} className="p-4 mb-4">

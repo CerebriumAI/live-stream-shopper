@@ -73,14 +73,17 @@ const Splash: React.FC<SplashProps> = ({ handleReady }) => {
           </div>
         </div>
 
-        <div className="max-w-full lg:max-w-2xl flex flex-col gap-6">
+        <div className="max-w-full lg:max-w-2xl flex flex-col gap-6 text-center">
           <p className="lg:text-lg text-primary-600">
             More and more content is getting released in video format and often users see items in a video that they would
             like to buy. Well what if you could? This is a example of being a able to shop items in a live stream...<b>in real-time.</b>
 
           </p>
           <p className="lg:text-lg text-primary-600">
-            This demo is using <a href="https://www.cerebrium.ai">Cerebrium</a>, a serverless infrastructure platform that makes it easy to
+          In this demo, show basic items in the live stream, like a phone or a book and we will recognize it and list a link for you to find/buy it straight away!
+          </p>
+          <p className="lg:text-lg text-primary-600">
+            This demo is build using <u><a href="https://www.cerebrium.ai">Cerebrium</a></u>, a serverless infrastructure platform that makes it easy to
             build and deploy AI applications
           </p>
         </div>
@@ -102,19 +105,17 @@ const Splash: React.FC<SplashProps> = ({ handleReady }) => {
         <div className="h-[1px] bg-primary-300 w-full" />
 
         <footer className="flex flex-col lg:flex-row lg:gap-2">
-          <Button asChild>
-            <a
+          <Button asChild className="text-purple-600 hover:text-purple-700 bg-transparent">
+        <a
               href="https://github.com/CerebriumAI/examples/tree/master/19-voice-rag-agent"
-              className="text-indigo-600"
             >
               <Book className="size-6" />
               View source code
             </a>
           </Button>
-          <Button asChild>
+          <Button asChild className="text-purple-600 hover:text-purple-700 bg-transparent">
             <a
               href="https://www.cerebrium.ai/blog/creating-a-realtime-rag-voice-agent"
-              className="text-indigo-600"
             >
               <Rocket className="size-6" />
               Deploy your own
