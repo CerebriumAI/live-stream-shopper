@@ -115,7 +115,7 @@ const Splash: React.FC<SplashProps> = ({ handleReady }) => {
           </Button>
           <Button asChild className="text-purple-600 hover:text-purple-700 bg-transparent">
             <a
-              href="www.cerebrium.ai/blog/building-a-real-time-shopping-assistant-turn-live-video-into-instant-purchases"
+              href="https://www.cerebrium.ai/blog/building-a-real-time-shopping-assistant-turn-live-video-into-instant-purchases"
             >
               <Rocket className="size-6" />
               Deploy your own
