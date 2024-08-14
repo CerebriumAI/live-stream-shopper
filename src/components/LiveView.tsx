@@ -33,7 +33,7 @@ export function LiveView({ url }: { url: string }) {
 
   const monitor_room = (url: string) => {
     setIsLoading(true);
-    setRunID(runID);
+    setRunID(url);
     fetch(`${process.env.NEXT_PUBLIC_CEREBRIUM_URL}/start`, {
       method: 'POST',
       headers: {
