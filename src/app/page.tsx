@@ -4,7 +4,6 @@ import { LiveView } from "@/components/LiveView";
 import Splash from "./Splash";
 import { useState } from "react";
 import Header from "../components/ui/header";
-import { Analytics } from "@vercel/analytics/react"
 const showSplashPage = process.env.NEXT_PUBLIC_SHOW_SPLASH;
 
 
