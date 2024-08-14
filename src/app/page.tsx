@@ -4,7 +4,7 @@ import { LiveView } from "@/components/LiveView";
 import Splash from "./Splash";
 import { useState } from "react";
 import Header from "../components/ui/header";
-
+import { Analytics } from "@vercel/analytics/react"
 const showSplashPage = process.env.NEXT_PUBLIC_SHOW_SPLASH;
 
 
@@ -26,7 +26,7 @@ export default function Home() {
         <p>
           <ul>This demo works best when your camera is high quality</ul>
           <br/>
-          <ul>The object detection model is very generic and only recognizes 30 items mentioned <u><a href="https://huggingface.co/ultralyticsplus/yolov8s">here</a></u></ul>
+          <ul>We only trained the object detection model only recognises shoes, cups, books and watches</ul>
           <br/>
           <ul>It won't show a type of item (ie: cup) again if its already been detected</ul>
         </p>

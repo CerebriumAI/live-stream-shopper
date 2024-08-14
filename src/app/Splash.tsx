@@ -107,7 +107,7 @@ const Splash: React.FC<SplashProps> = ({ handleReady }) => {
         <footer className="flex flex-col lg:flex-row lg:gap-2">
           <Button asChild className="text-purple-600 hover:text-purple-700 bg-transparent">
         <a
-              href="https://github.com/CerebriumAI/examples/tree/master/19-voice-rag-agent"
+              href="https://github.com/CerebriumAI/examples/tree/master/27-ecommerce-live-stream"
             >
               <Book className="size-6" />
               View source code
@@ -115,7 +115,7 @@ const Splash: React.FC<SplashProps> = ({ handleReady }) => {
           </Button>
           <Button asChild className="text-purple-600 hover:text-purple-700 bg-transparent">
             <a
-              href="https://www.cerebrium.ai/blog/creating-a-realtime-rag-voice-agent"
+              href="www.cerebrium.ai/blog/building-a-real-time-shopping-assistant-turn-live-video-into-instant-purchases"
             >
               <Rocket className="size-6" />
               Deploy your own
